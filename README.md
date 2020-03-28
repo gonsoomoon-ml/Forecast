@@ -3,6 +3,13 @@
 **이 노트북의 원본은 https://github.com/chrisking/ForecastPOC.git 으로서, 원본 내용의 기반하에 추가 내용등을 기술한 버전 입니다.**
 
 * AWS Forecast AI 서비스를 가지고 미국 미네라폴리스 근처 고속도로의 차량 통행량을 시간별로 예측하는 문제를 풀어가는 과정을 아래 4개의 노트북으로 구성 함.
+(Hourly Data)
+
+
+* **Technique included**
+    * Compare Target Data vs. Target + Related Data
+    * Compare ARIMA, Prophet and DeepARP performance with Acutal value
+
 
 * Process: (Traffic Volume 폴더 안에 노트북을 아래 순서대로 실행 하셔야 합니다.)
     * Validating_and_Importing_Target_Time_Series_Data
@@ -14,9 +21,43 @@
     * Creating_and_Evaluating_Related_Time_Predictors
         * Target Time Series Data 및 Related Time Series Data 와 Prophet, DeepAR+ 알고리즘을 가지고 Predictors 및 Forecasts를 생성한 후에 모델의 성능 분석을 함.
   
-# Forecasting Walmart Weekly Sale with AWS Forecast
+# Forecasting Store Item Demanding  
+(Data Source: https://www.kaggle.com/c/demand-forecasting-kernels-only/overview)
 
-*  AWS Forecast AI 서비스를 가지고 미국 월마트 45개의 상점의 주간 매출을 예측 함.
+* AWS Forecast AI 서비스를 가지고 Store Item Demanding 예측 함.(Daily Data)
+
+* **Technique included**
+    * Use two dimenstions, item_id and store on Target Data
+    * Use QueryForecast with two filters, item_id and store
+    * Use QueryForecast with one filters, item_id 
+    * Use HPO for building DeepARP 
+    * Measure MAPE on Prophet and Deeparp campaigns    
+    * Compare Prophet and DeepARP performance with actual value
+
+
+* Process: (StoreItemDemand 폴더 안에 노트북을 아래 순서대로 실행 하셔야 합니다.)
+    * Import_Target_Dataset.ipynb
+        * 데이타를 준비하고 Target Time Series Data를 정의, Dataset 생성, Dataset Import 함. **데이타 조회 디멘션을 item_id, store 2 개로 구성 함.**  
+    * Create_Target_DatasetGroup.ipynb
+        * Target 데이타만을 가지고 Dataset Group을 생성 함.
+    * Create_Target_Predictors.ipynb
+        * Target 데이타만을 이용하여  Prophet, DeepAR+ 알고리즘을 가지고 Predictors 생성    
+    * Create_Target-Campaign.ipynb
+        * Target 데이타만을 이용하여  Prophet, DeepAR+ Predictors 생성
+    * Option - Create_Target_Predictors_HPO.ipynb
+        * DeepARP 를 HPO = True 로 Predictor 생성
+            
+
+# Forecasting Walmart Weekly Sale with AWS Forecast
+(Data Source: https://www.kaggle.com/fernandol/cracking-the-walmart-sales-forecasting-challenge)
+
+
+*  AWS Forecast AI 서비스를 가지고 미국 월마트 45개의 상점의 주간 매출을 예측 함.(Weekly Data)
+
+* **Technique included**
+    * Use three data sets of Target, Related and Item Meta
+    * Compare Prophet and DeepARP performance with actual value    
+
 
 * Process: (WalmartSale 폴더 안에 노트북을 아래 순서대로 실행 하셔야 합니다.)
     * Import_Target_Dataset.ipynb
