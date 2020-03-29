@@ -1,4 +1,4 @@
-# Forecasting Store Item Demanding  
+# Forecasting Store Item Demanding with AWS Forecast  
 (Data Source: https://www.kaggle.com/c/demand-forecasting-kernels-only/overview)
 
 * AWS Forecast AI 서비스를 가지고 Store Item Demanding 예측 함.(Daily Data)
