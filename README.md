@@ -1,7 +1,7 @@
 # Forecasting Store Item Demanding with AWS Forecast  
 (Data Source: https://www.kaggle.com/c/demand-forecasting-kernels-only/overview)
 
-* AWS Forecast AI 서비스를 가지고 Store Item Demanding 예측 함.(Daily Data)
+* **Content: Using AWS Forecast AI, forecasting the store item demanding problem (Daily Data)**
 
 * **Technique included**
     * Use two dimenstions, item_id and store on Target Data
@@ -12,17 +12,20 @@
     * Compare Prophet and DeepARP performance with actual value
 
 
-* Process: (StoreItemDemand 폴더 안에 노트북을 아래 순서대로 실행 하셔야 합니다.)
-    * Import_Target_Dataset.ipynb
-        * 데이타를 준비하고 Target Time Series Data를 정의, Dataset 생성, Dataset Import 함. **데이타 조회 디멘션을 item_id, store 2 개로 구성 함.**  
-    * Create_Target_DatasetGroup.ipynb
-        * Target 데이타만을 가지고 Dataset Group을 생성 함.
-    * Create_Target_Predictors.ipynb
-        * Target 데이타만을 이용하여  Prophet, DeepAR+ 알고리즘을 가지고 Predictors 생성    
-    * Create_Target-Campaign.ipynb
-        * Target 데이타만을 이용하여  Prophet, DeepAR+ Predictors 생성
-    * Option - Create_Target_Predictors_HPO.ipynb
-        * DeepARP 를 HPO = True 로 Predictor 생성
+* Process: (In the folder the StoreItemDemand, run the following notebooks in order)
+    * 1.Prepare_Data_File.ipynb
+        * Prepare data file handling a raw data file
+    * 2.Import_Dataset.ipynb (About 10 mins elapsed)
+        * Create dataset group, dataset and dataset import job as well as importing the data file from S3
+        * The dataset file as target time series data has two dimensions such as item_id and store
+    * 3.Create_Target_Predictors.ipynb (About 40 mins elapsed)
+        * Create predictors with the prophet and deepar+ 
+    * 4.Create_Target-Campaign.ipynb (About 50 mins elapsed)
+        * Create campaings with the two predictors and analyze results on the campaigns
+    * 5.Cleanup.ipynb
+        * Clean up resources
+    * 6.Option_Create_Target_Predictors_HPO.ipynb
+        * Turning on HPO option, create  a predictor with deepar+ 
             
 
 # Forecasting Walmart Weekly Sale with AWS Forecast
