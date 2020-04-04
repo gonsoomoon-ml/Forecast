@@ -20,11 +20,13 @@
         * The dataset file as target time series data has two dimensions such as item_id and store
     * 3.Create_Target_Predictors.ipynb (About 40 mins elapsed)
         * Create predictors with the prophet and deepar+ 
-    * 4.Create_Target-Campaign.ipynb (About 50 mins elapsed)
-        * Create campaings with the two predictors and analyze results on the campaigns
-    * 5.Cleanup.ipynb
+    * 4.Create_Target_Forecast.ipynb (About 50 mins elapsed)
+        * Create forecasts with the two predictors 
+    * 5.Analyze_Target_Forecast.ipynb (About 10 mins elapsed)
+        * Analyze results on the forecasts
+    * 6.Cleanup.ipynb (About 10 mins elapsed)
         * Clean up resources
-    * 6.Option_Create_Target_Predictors_HPO.ipynb
+    * 7.Option_Create_Target_Predictors_HPO.ipynb (About 90 mins elapsed)
         * Turning on HPO option, create  a predictor with deepar+ 
             
 
