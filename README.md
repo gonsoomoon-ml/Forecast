@@ -33,7 +33,7 @@
             
 
 # Forecasting Walmart Weekly Sale with AWS Forecast
-(Data Source: https://www.kaggle.com/fernandol/cracking-the-walmart-sales-forecasting-challenge)
+(Data Source: https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting)
 
 * **Description: Forecasting item's weekly sales in 45 U.S. Walmart stores with Amazon Forecast**
 
