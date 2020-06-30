@@ -1,3 +1,8 @@
+
+# 핸즈온 사전 단계 입니다.(This is a Prerequisite Step for later Contents)
+
+[핸즈온 준비 필수 단게: Prerequisite](Prerequisite.md)
+
 **Prerequisite Task: Make sure that a role for SageMaker notebook instance has these policies attached such as AmazonSageMakerFullAccess, AmazonS3FullAccess, AmazonForecastFullAccess, IAMFullAccess**
 
 # Forecasting Store Item Demanding with AWS Forecast  
