@@ -1,7 +1,7 @@
 
 # 아래 링크를 누르시고 핸즈온 사전 단계를 진행 해주세요.(This is a Prerequisite Step for later Contents)
 
-[핸즈온 준비 필수 단게: Prerequisite](Prerequisite.md)
+[핸즈온 준비 필수 단게: Prerequisite](0.0.Prerequisite/Prerequisite.md)
 
 **Prerequisite Task: Make sure that a role for SageMaker notebook instance has these policies attached such as AmazonSageMakerFullAccess, AmazonS3FullAccess, AmazonForecastFullAccess, IAMFullAccess**
 
