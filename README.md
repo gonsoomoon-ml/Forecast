@@ -5,7 +5,9 @@
 
 **Prerequisite Task: Make sure that a role for SageMaker notebook instance has these policies attached such as AmazonSageMakerFullAccess, AmazonS3FullAccess, AmazonForecastFullAccess, IAMFullAccess**
 
-# Forecasting Store Item Demanding with AWS Forecast  
+## 처음 핸즈온의 경우는 아래 Forecasting Store Item Demanding with AWS Forecast 를 먼저 하시면 좋습니다.
+
+## Forecasting Store Item Demanding with AWS Forecast  
 (Data Source: https://www.kaggle.com/c/demand-forecasting-kernels-only/overview)
 
 * **Description: Using AWS Forecast AI, forecasting the store item demanding problem (Daily Data)**
@@ -18,6 +20,7 @@
     * Measure MAPE on Prophet and Deeparp campaigns    
     * Compare Prophet and DeepARP performance with actual value
 
+## 아래 단계에서 1~6번까지의 노트북을 실행 하시면 됩니다.
 
 * Process: (In the folder StoreItemDemand, run the following notebooks in order)
     * 1.Prepare_Data_File.ipynb
@@ -37,7 +40,7 @@
         * Turning on HPO option, create  a predictor with deepar+ 
             
 
-# Forecasting Walmart Weekly Sale with AWS Forecast
+## Forecasting Walmart Weekly Sale with AWS Forecast
 (Data Source: https://www.kaggle.com/c/walmart-recruiting-store-sales-forecasting)
 
 * **Description: Forecasting item's weekly sales in 45 U.S. Walmart stores with Amazon Forecast**
@@ -74,7 +77,7 @@
         * 2.7.Cleanup.ipynb
 
     
-# Forecasting Traffic Volume with AWS Forecast
+## Forecasting Traffic Volume with AWS Forecast
 **The following noteboos are based on the https://github.com/chrisking/ForecastPOC.git **
 
 * **Description: Forecasting traffic volume in interstate highway near Minneapolis city (AWS Forecast AI 서비스를 가지고 미국 미네라폴리스 근처 고속도로의 차량 통행량을 시간별로 예측하는 문제를 풀어가는 과정을 아래 4개의 노트북으로 구성 함.)**
