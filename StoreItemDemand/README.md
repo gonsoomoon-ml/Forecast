@@ -1,14 +1,3 @@
-
-# 아래 링크를 누르시고 핸즈온 사전 단계를 진행 해주세요.(This is a Prerequisite Step for later Contents)
-
-[핸즈온 준비 필수 단게: Prerequisite](StoreItemDemand/0.0.Prerequisite/Prerequisite.md)
-
-**Prerequisite Task: Make sure that a role for SageMaker notebook instance has these policies attached such as AmazonSageMakerFullAccess, AmazonS3FullAccess, AmazonForecastFullAccess, IAMFullAccess**
-
-## Forecasting Store Item Demanding with AWS Forecast  
-(Data Source: https://www.kaggle.com/c/demand-forecasting-kernels-only/overview)
-
-
 ## 아래 단계에서 1~6번까지의 노트북을 실행 하시면 됩니다.
 
 * Process: (In the folder StoreItemDemand, run the following notebooks in order)
