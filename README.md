@@ -1,9 +1,10 @@
 
 # 아래 링크를 누르시고 핸즈온 사전 단계를 진행 해주세요.(This is a Prerequisite Step for later Contents)
 
-[핸즈온 준비 필수 단게: Prerequisite](0.0.Prerequisite/Prerequisite.md)
+[핸즈온 준비 필수 단게: Prerequisite](0.0.Prerequisite/CF-Prerequisite.md) <br><br>
+    - 수동 설정을 위해서는 [여기](0.0.Prerequisite/Prerequisite.md) 를 클릭해서 해주세요.
 
-**Prerequisite Task: Make sure that a role for SageMaker notebook instance has these policies attached such as AmazonSageMakerFullAccess, AmazonS3FullAccess, AmazonForecastFullAccess, IAMFullAccess**
+Note: Make sure that a role for SageMaker notebook instance has these policies attached such as AmazonSageMakerFullAccess, AmazonS3FullAccess, AmazonForecastFullAccess, IAMFullAccess
 
 ## 처음 핸즈온의 경우는 아래 Forecasting Store Item Demanding with AWS Forecast 를 먼저 하시면 좋습니다.
 
