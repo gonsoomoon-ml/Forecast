@@ -100,6 +100,7 @@ To get to the Jupyter interface, simply click `Open JupyterLab` on the far right
 
 - **아래 화면 처럼 입력 해주시고, 오른쪽에 폴더가 생성되었는지 확인 해주세요. (아래 그림의 (1), (2), (3)을 하세요)**
     - 간단하게 아래를 순서대로 카피 하시고 (Control-v 혹은 Cmd-v) 하시고 붙여넣기 (Control-v) 하시면 됩니다.
+    - cd
     - cd SageMaker
     - git clone https://github.com/daekeun-ml/recommendation-workshop
 
