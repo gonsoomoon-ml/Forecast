@@ -26,7 +26,7 @@
 ### (2) 이후에 브라우저에 안에서 새로운 탭을 하나 생성 후에, 아래 링크를 클릭하여 CloudFormation을 통해 관련 작업을 수행 하시면 됩니다.<br>
 The first step is to deploy a CloudFormation template that will perform much of the initial setup for you. In another browser window login to your AWS account. Once you have done that open the link below in a new tab to start the process of deploying the items you need via CloudFormation.
 
-[![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=PersonalizeDemo&templateURL=https://gonsoomoon-priviate-share.s3.ap-northeast-2.amazonaws.com/DaekeunPersonalizeDemo.yaml)
+[![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=PersonalizeDemo&templateURL=https://gonsoomoon-priviate-share.s3.ap-northeast-2.amazonaws.com/GonsooPersonalizeForecastDemo.yaml)
 
 ### 아래 스크린샷의 가이드를 따라 하시면 됩니다.<br>
 Follow along with the screenshots if you have any questions about these steps.
